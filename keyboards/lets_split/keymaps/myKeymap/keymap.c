@@ -67,16 +67,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
 	[_QWERTY] = KEYMAP( \
-		KC_Q,  KC_W,   KC_E,           KC_R,  KC_T,    KC_LGUI, KC_APP,  KC_Y,    KC_U,  KC_I,           KC_O,   KC_P,   \
+		KC_Q,  KC_W,   KC_E,           KC_R,  KC_T,    KC_APP,  KC_APP,  KC_Y,    KC_U,  KC_I,           KC_O,   KC_P,   \
 		KC_A,  KC_S,   KC_D,           KC_F,  KC_G,    KC_SPC,  KC_NO,   KC_H,    KC_J,  KC_K,           KC_L,   KC_MINS,\
 		KC_Z,  KC_X,   KC_C,           KC_V,  KC_B,    KC_TAB,  KC_ENT,  KC_N,    KC_M,  KC_COMM,        KC_DOT, KC_SLSH,\
-		FN,    KC_ESC, ALT_T(JP_MHEN), LOWER, KC_LSFT, KC_LCTL, KC_LCTL, KC_LSFT, RAISE, ALT_T(JP_HENK), KC_ESC, FN      \
+		FN,    KC_LGUI,ALT_T(JP_MHEN), LOWER, KC_LSFT, KC_LCTL, KC_LCTL, KC_LSFT, RAISE, ALT_T(JP_HENK), KC_RGUI,FN      \
     ), 
 
 	[_LOWER] = KEYMAP( \
-		KC_PGUP, KC_BTN1, KC_UP  , KC_BTN2, _______, _______, _______, KC_ESC,  KC_7, KC_8,    KC_9,    _______, \
-		KC_BSPC, KC_LEFT, KC_DOWN, KC_RGHT, KC_DEL,  _______, _______, KC_SPC,  KC_4, KC_5,    KC_6,    _______, \
-		KC_PGDN, KC_HOME, KC_BTN3, KC_END , _______, _______, _______, KC_ENT,  KC_1, KC_2,    KC_3,    _______, \
+		KC_PGUP, KC_BTN1, KC_UP  , KC_BTN2, _______, _______, _______, KC_HOME, KC_7, KC_8,    KC_9,    _______, \
+		KC_BSPC, KC_LEFT, KC_DOWN, KC_RGHT, KC_DEL,  _______, _______, KC_END,  KC_4, KC_5,    KC_6,    _______, \
+		KC_PGDN, KC_ESC,  KC_SPC,  KC_ENT , KC_TAB,  _______, _______, _______, KC_1, KC_2,    KC_3,    _______, \
 		_______, _______, _______, _______, _______, _______, _______, _______, KC_0, _______, _______, _______  \
     ),
 
